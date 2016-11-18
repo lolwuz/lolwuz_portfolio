@@ -41,6 +41,12 @@ $(window).scroll(function(event) {
             el.addClass("fadeInRight");
         }
     });
+    $(".text-fade").each(function(i, el) {
+        var el = $(el);
+        if (el.visible(true)) {
+            el.addClass("fadeIn");
+        }
+    });
 });
 
 // Soepel naar beneden navigeren
