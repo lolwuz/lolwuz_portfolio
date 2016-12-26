@@ -1,29 +1,31 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+/*
 
-
-/**
  * lolwuz.com
- *
+ * 
  * Basis opmaak van de webpagina.
  * Created by Marten Hoekstra (2016)
- */
+ 
+*/
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     color: gray;
     line-height: 180%;
     background-color: whitesmoke;
-    overflow-x: hidden; /* Animatie fadeInRight zorgde voor een horizontale scrollbar.*/
+    overflow-x: hidden;
+    /* Animatie fadeInRight zorgde voor een horizontale scrollbar.*/
 }
-h1{
+
+h1 {
     font-weight: 700;
     font-size: 80px;
     text-shadow: 2px 2px 45px black;
 }
 
-h3{
-    color:black;
+h3 {
+    color: black;
 }
 
 p.normal {
@@ -39,67 +41,68 @@ p.oblique {
 }
 
 @media only screen and (max-width: 480px) {
-    h1{
+    h1 {
         font-size: 40px;
     }
 }
 
-/** Navigatie
- ---------------------------------------------------------*/
+
+/* Navigatie ------------------------------------------- */
 
 .navbar-default {
     color: white;
     background-color: #2F97C1;
     width: 100%;
     position: absolute;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
     -webkit-transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
 }
 
-.navbar-default:hover{
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+.navbar-default:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.navbar-default a{
+.navbar-default a {
     color: white;
 }
 
-.navbar-default .navbar-nav>li>a{
+.navbar-default .navbar-nav>li>a {
     color: white;
 }
-.navbar-default .navbar-toggle .icon-bar{
+
+.navbar-default .navbar-toggle .icon-bar {
     background-color: white;
 }
 
-.navbar-default .navbar-toggle:active .icon-bar{
+.navbar-default .navbar-toggle:active .icon-bar {
     background-color: white;
 }
+
 .navbar-default .navbar-toggle:focus .icon-bar {
     background-color: #00ccff;
 }
 
 
-/** Header
- ---------------------------------------------------------*/
+/* Header --------------------------------------------- */
 
 .headcontainer {
     height: 100vh;
     width: 100%;
     top: 0;
     left: 0;
-    z-index:-100;
+    z-index: -100;
     position: relative;
     padding: 0 0;
     margin: 0 0;
-    overflow:visible;
+    overflow: visible;
     background-image: url("../images/background-min.jpg");
     background-position: center center;
     background-size: cover;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-.headtext{
+.headtext {
     left: 0;
     position: absolute;
     top: 30%;
@@ -109,7 +112,7 @@ p.oblique {
     font-weight: 700;
 }
 
-.headtext p{
+.headtext p {
     font-size: 18px;
     padding: 5px;
 }
@@ -128,38 +131,50 @@ video {
     background-size: cover;
 }
 
-/** Content
- ---------------------------------------------------------*/
 
-#pictureframe1{
+/* Content -------------------------------------------- */
+
+#pictureframe1 {
     height: 400px;
     overflow: visible;
     background: url("../images/dividers/1sep.jpg") center center;
     background-size: cover;
 }
-#pictureframe2{
+
+#pictureframe2 {
     height: 400px;
     overflow: visible;
     background: url("../images/dividers/2sep.jpg") center center;
     background-size: cover;
 }
-#pictureframe3{
+
+#pictureframe3 {
     height: 400px;
     overflow: visible;
     background-image: url("../images/dividers/3sep.jpg");
     background-position: center center;
     background-size: cover;
 }
-#container1{
+
+.frameText {
+    color: white;
+    top: 50%;
+    left: 100px;
+    box-shadow: none;
+}
+
+#container1 {
     background-color: whitesmoke;
 }
-#container1 h1{
+
+#container1 h1 {
     color: black;
     font-size: 40px;
     margin-bottom: 20px;
     text-shadow: none;
 }
-.circle{
+
+.circle {
     width: 200px;
     height: 200px;
     border: 1px solid rgba(0, 0, 0, 0.4);
@@ -167,120 +182,132 @@ video {
     -moz-border-radius: 150px;
     border-radius: 150px;
 }
-#container2{
+
+#container2 {
     background-color: whitesmoke;
     padding: 20px;
 }
-#container2 h1{
-    color: black;
-    font-size: 40px;
-    margin-bottom: 20px;
-    text-shadow: none;
-}
-#container2 p{
-    margin: 10px;
-}
-#container3{
-    background-color: whitesmoke;
-}
-#container3 h1{
+
+#container2 h1 {
     color: black;
     font-size: 40px;
     margin-bottom: 20px;
     text-shadow: none;
 }
 
-#container4{
+#container2 p {
+    margin: 10px;
+}
+
+#container3 {
     background-color: whitesmoke;
 }
-#container4 h1{
+
+#container3 h1 {
+    color: black;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-shadow: none;
+}
+
+#container4 {
+    background-color: whitesmoke;
+}
+
+#container4 h1 {
     color: black;
     font-size: 40px;
     margin-bottom: 20px;
     text-shadow: none;
     padding: 20px;
 }
-.card{ /* Basis kaart */
+
+.card {
+    /* Basis kaart */
     -webkit-transform-style: preserve-3d;
     background-color: white;
     margin-top: 40px;
     margin-bottom: 40px;
     padding: 0 0;
     position: relative;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
-.card img{
+
+.card img {
     opacity: 0.8;
 }
-.cardtext{
+
+.cardtext {
     padding: 10px 10px;
 }
-.containtitle{
+
+.containtitle {
     color: white;
     padding: 50% 0;
     vertical-align: 50%;
 }
 
-/** Footer
- ---------------------------------------------------------*/
 
-#footer{
+/* Footer --------------------------------------------- */
+
+#footer {
     height: 250px;
     overflow: hidden;
     background: #2F97C1 url('../images/Cat-Jump-PNG.png') no-repeat -40% center;
     background-size: 300px 240px;
     padding: 0 0;
     margin: 0 0;
-    box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-.animatedcat{
+.animatedcat {
     animation: flyingcat 10s infinite;
     -webkit-animation: flyingcat 10s infinite;
 }
 
-@keyframes flyingcat{
-    0%{
+@keyframes flyingcat {
+    0% {
         background-position: -40% center;
     }
-    100%{
+    100% {
         background-position: 140% center;
     }
 }
 
-@-webkit-keyframes flyingcat{
-    0%{
+@-webkit-keyframes flyingcat {
+    0% {
         background-position: -20% center;
     }
-    100%{
+    100% {
         background-position: 140% center;
     }
 }
 
-#title{
+#title {
     background-color: white;
     height: 47px;
 }
 
-/** Scroll dingetje
- ---------------------------------------------------------*/
-.scrollToTop{
-    width:100px;
-    height:60px;
-    text-align:center;
+
+/* TopScroller --------------------------------------------- */
+
+.scrollToTop {
+    width: 100px;
+    height: 60px;
+    text-align: center;
     background: #2F97C1;
     font-weight: bold;
     color: white;
     text-decoration: none;
-    position:fixed;
+    position: fixed;
     top: 0;
     right: 0;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
-.scrollToTop:hover{
-    text-decoration:none;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+.scrollToTop:hover {
+    text-decoration: none;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 
